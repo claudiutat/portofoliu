@@ -1,0 +1,293 @@
+html {
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+* { box-sizing: border-box; }
+
+
+
+
+/* Sections */ 
+.section-block { 
+    height:calc(100vh - 9.5rem);
+    padding: 5rem;
+    
+    
+
+}
+
+#pfixed {
+    position: absolute;
+    bottom:0;
+    height: 8rem;
+}
+
+.portofoliu {
+    position: absolute;
+    bottom:0;
+    height: 8rem;
+}
+
+
+.section-block.grey { 
+    background-color: grey; 
+    
+}
+
+.section-block h1 { 
+    
+    display:block; 
+    position:relative; 
+    text-align: center;
+    font-size: 4.8rem; 
+    font-weight: 600; 
+    margin-bottom: 2.5rem; 
+}
+
+
+
+.section-block.grey h1 { 
+    display: block;
+    position: relative;
+    color:#fff
+}
+
+
+.list {
+    font-size: 2.5rem;
+    text-align:center ;
+    color: lightgreen;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    
+
+
+}
+
+.paragraflist {
+    margin-top: 7rem;
+    font-size: 1.8rem;
+    text-align: justify;
+    color: lightyellow;
+    margin-bottom: 7rem;
+    
+}
+
+.section-block.green { 
+    font-size: 1.8rem;
+    background-color: lightgreen;
+}
+
+.section-block.green h1 {
+    color: rebeccapurple;
+    font-size: 5rem;
+    
+}
+
+.section-block.blue {
+    background-color: lightskyblue;
+}
+
+.section-block.blue h1 {
+    color: red;
+    font-size: 5rem;
+}
+ol {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1.8;
+    font-style: italic;
+    color:yellow;
+}
+
+.section-block.pink {
+    background-color: lightpink;
+}
+
+
+.descriere {
+    float: left;
+    border: 4px solid green;
+}
+
+div > img {
+    float: right;
+    width: 10rem;
+    height: 15rem;
+    border-radius:5rem 5rem 5rem 5rem ;
+    border-width: 0.5rem;
+    border-right-style:outset;
+    border-left-style:outset;
+    border-top-style:outset;
+    border-bottom-style:outset;
+   
+}
+
+
+
+.section-block.maroon {
+    background-color: burlywood;
+}
+
+.section-block.maroon h1 {
+    font-size: 5rem;
+    
+
+}
+
+.formular {
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+
+@media (max-width:2048px) and (min-width:0px)  {
+    .section-block { 
+        height:auto; 
+        min-height:calc(100vh - 8rem);  
+        padding:2.5rem; 
+        
+    }
+
+ 
+
+    .section-block h1 { 
+        font-size:3.8rem; 
+       
+    }
+
+  
+
+/* Sections */ 
+
+
+/* Navigation */
+
+header { 
+    position:fixed; top:0; left:0; width: 100%; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0.75rem 5rem; 
+    height:8rem; 
+    background-color: lightgrey; 
+    z-index: 2;
+}
+
+header + * {
+    margin-top:8rem;
+}
+
+    .logo { 
+        display:inline-block;
+     }
+        .logo > img {
+             width: 6rem; 
+             height: 6rem; 
+             border-radius: 50%;
+            }
+
+    .navigation { 
+        display: inline-block; 
+        text-align: center;  
+    }
+
+        .navigation > a { 
+            display: inline-block; 
+            margin-right: 1rem; 
+            font-size: 1.6rem; 
+            text-decoration: none; 
+            color: black; 
+        }
+
+        .navigation > a:last-child {
+             margin-right: 0;
+            }
+
+        .navigation > a:hover { 
+            text-decoration: underline; 
+        }
+
+
+@media (max-width:580px)  {
+
+    header { 
+        padding:0.75rem 2.5rem; 
+        
+    }
+
+        .navigation > a { 
+     
+            margin-bottom: 0.5rem; 
+        }
+
+}
+    
+
+
+
+
+    
+
+
+/* Navigation */
+
+
+/* Hero */
+
+
+.hero { 
+    display:flex; 
+    align-items: center; 
+    position:relative;   
+    padding: 0 5rem 10vh; 
+    background-image: url("images/snowboard.jpg"); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;  
+    color:tomato; 
+
+}
+    .hero::before { 
+        content: ""; 
+        position: absolute;   
+        top: 0;  
+        left: 0;   
+        width: 100%; 
+        height: 100%; 
+        background-color:black 
+        rgba(0, 0, 0, 0.75);
+    }
+
+    .hero  h1 { 
+        position: relative; 
+        z-index: 1; 
+        text-align: left;
+    }
+
+    .hero  p { 
+        position: relative; 
+        z-index: 1; 
+        font-size: 1.8rem; 
+        line-height: 1.4; 
+    }
+
+ 
+    @media (max-width:768px) {
+
+        .hero { display: flex; padding:5rem 2.5rem; }
+        
+        .hero p { font-size: 1.4rem; }
+    
+    } 
+    
+    
+    
+
+/* Hero */
+}
